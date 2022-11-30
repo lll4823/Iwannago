@@ -1,20 +1,14 @@
 import React from 'react';
 
-class Detail extends React.Component {
-  componentDidMount() {
+class Detail extends React.Component{
+  componentDidMount()
+  {
     const { location, history } = this.props;
-    if (location.state === undefined) {
-      history.push('/');
-    }
   }
 
-  render() {
-    const { location } = this.props;
-    if (location.state) {
-      return <span>{location.state.title}</span>;
-    } else {
-      return null;
-    }
+  render()
+  {
+    return <span><img src="https://i.imgur.com/CC4nHv6.jpg"></img></span>;
   }
 }
 

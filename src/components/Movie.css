@@ -30,10 +30,14 @@
 .movie .movie__title,
 .movie .movie__year {
   margin: 0;
-  font-weight: 300;
+  font-weight: bold;
+  color : #000000
 }
 
+
+
 .movie .movie__title {
+  font-weight : bold;
   margin-bottom: 5px;
   font-size: 24px;
   color: #2c2c2c;
@@ -46,13 +50,19 @@
   display: flex;
   flex-wrap: wrap;
   margin: 5px 0px;
+  font-weight:bold;
+  color: #ff0000
 }
 
+.movie .movie__rating{
+  color: #ff0000
+}
 .movie__genres li,
 .movie .movie__year {
   margin-right: 10px;
   font-size: 14px;
 }
 .movie .movie__summary {
-  color: #ff0000
+  font-weight : bold;
+  color: #000000
 }

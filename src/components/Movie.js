@@ -9,8 +9,8 @@ function Movie({ title, year, summary, poster, genres , rating }) {
       <Link to={{ pathname: '/movie-detail', state: { year, title, summary, poster, genres , rating } }}>
         <img src={poster} alt={title} title={title} />
         <div className="movie__data">
-          <h3 className="movie__rating">{rating}</h3>
           <h3 className="movie__title">{title}</h3>
+          <h3 className="movie__rating">★{rating}/10.0</h3>
           <h5 className="movie__year">{year}</h5>
           <ul className="movie__genres">
             {genres.map((genre, index) => {
